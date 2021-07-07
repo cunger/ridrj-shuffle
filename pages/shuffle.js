@@ -34,8 +34,6 @@ export default function Shuffle() {
       data[column].push(value);
     }
 
-    console.log(JSON.stringify(data));
-
     setCombo([
       pickRandomElementFrom(data.interests),
       pickRandomElementFrom(data.important),
