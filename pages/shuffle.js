@@ -44,15 +44,16 @@ export default function Shuffle() {
     ]);
   }
 
+  let i = 0;
   return (
     <div>
-      <div class="combo">
+      <div className="combo">
         <ul>
-          {combo.map(part => <li>{part}</li>)}
+          {combo.map(part => <li key={i++}>{part}</li>)}
         </ul>
       </div>
 
-      <form onSubmit={shuffle} class="shuffle">
+      <form onSubmit={shuffle} className="shuffle">
         <Keywords
           title="Interessiert mich"
           phraseKey="interests"
@@ -77,7 +78,7 @@ export default function Shuffle() {
           phrases={[]}
         />
 
-        <div class="action">
+        <div className="action">
           <button type="submit">Shuffle!</button>
         </div>
       </form>
