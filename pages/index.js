@@ -1,25 +1,26 @@
 import Head from 'next/head'
 import Shuffle from './shuffle.js'
-import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div className="container">
       <Head>
         <title>RidrJ Shuffle</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-        Würfel dir deine Superhelden-Skill-Combo!
+      <main className="main">
+        <h1 className="title">
+        🦸‍♀️‍ Deine Superhelden-Skill-Combo 🦸‍♂️
         </h1>
 
         <Shuffle />
       </main>
 
-      <footer className={styles.footer}>
-        Powered by ...
+      <footer className="footer">
+        <a href="https://jannikestoehr.com/rein-in-den-richtigen-job/">
+          Rein in den richtigen Job
+        </a>
       </footer>
     </div>
   )

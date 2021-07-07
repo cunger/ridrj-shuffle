@@ -31,6 +31,8 @@
   justify-content: center;
   align-items: center;
   flex-grow: 1;
+  text-decoration: underline;
+  text-decoration-color: #ccc;
 }
 
 .title a {
@@ -45,7 +47,6 @@
 }
 
 .title {
-  margin: 1em;
   line-height: 1.15;
   font-size: 2rem;
 }
@@ -60,14 +61,71 @@
   font-size: 1.5rem;
 }
 
+.shuffle {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.combo ul {
+  list-style-type: none;
+  text-align: center;
+  /* Text marker effect */
+  margin: 0 -0.4em;
+  padding: 0.1em 0.4em;
+  border-radius: 0.8em 0.3em;
+  background: transparent;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 225, 0, 0.1),
+    rgba(255, 225, 0, 0.7) 4%,
+    rgba(255, 225, 0, 0.3)
+  );
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+.combo li {
+  display: inline;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 1rem;
+  margin: 1rem;
+  color: #660033;
+  font-size: 1.4rem;
+}
+
 .keywords fieldset {
-  display: inline-block;
+  display: inline;
   padding: 1.5rem;
+  margin-top: 40px;
   border: 0;
+  max-width: 100px;
 }
 
 .keywords legend {
-  font-size: 1.5rem;
+}
+
+.keywords input {
+  padding: 0.5em 1em;
+  margin: 6px;
+  border-radius: 10px;
+  border: 1px solid #eee;
+}
+
+.action {
+  display: block;
+  text-align: center;
+  flex: 100%;
+}
+
+.action button {
+  padding: 0.6rem 1rem;
+  margin: 1rem;
+  background-color: #efefef;
+  border: none;
+  border-radius: 5px;
 }
 
 .code {
